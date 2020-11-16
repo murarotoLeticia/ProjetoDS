@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cutelaria Artesanal Estoque " language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d25c675e-2498-4b01-8741-139430d162a8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     *,
+     produto.`id_produto` AS produto_id_produto,
+     produto.`descricao_prod` AS produto_descricao_prod,
+     produto.`marca_prod` AS produto_marca_prod,
+     produto.`quant_prod` AS produto_quant_prod,
+     produto.`valor_prod` AS produto_valor_prod,
+     produto.`id_fornecedor` AS produto_id_fornecedor
+FROM
+     `produto` produto INNER JOIN `estoque` estoque ON produto.`id_produto` = estoque.`id_produto`]]>
+	</queryString>
+	<field name="id_produto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao_prod" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marca_prod" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quant_prod" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_prod" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_fornecedor" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_es" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quantidade_es" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="entrada_es" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="produto_id_produto" class="java.lang.Integer"/>
+	<field name="produto_descricao_prod" class="java.lang.String"/>
+	<field name="produto_marca_prod" class="java.lang.String"/>
+	<field name="produto_quant_prod" class="java.lang.Integer"/>
+	<field name="produto_valor_prod" class="java.lang.Double"/>
+	<field name="produto_id_fornecedor" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="14" y="12" width="80" height="67" uuid="58212a6d-fa40-4ea7-afc7-96c149859185"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="461" y="12" width="80" height="67" uuid="c19b3389-013a-4bab-b0b4-cc80b1da90da"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="98" y="15" width="357" height="51" uuid="909a3779-1f1c-436e-84ef-6ab4045e71b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Book Antiqua" size="28"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE ESTOQUE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="68" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="f84c5e84-602f-418a-b4ee-c35be3a29ea3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="168" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="90cd2cc0-78b3-45d3-8b26-1b80f2bf7de6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="a17c4040-e8c8-46df-a0a5-5755e14f9cdc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="368" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="73a2641c-6dd6-4bcb-ac53-f0888b735681"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="67" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="ea76b18a-f011-4e56-bd33-4ae0863c23c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="7a99fa6b-4907-459c-9d51-0f3b7ce278a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantidade ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="cd9178b5-1f68-4b8f-95d1-dd7d5ce4e886"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entrada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="19" width="100" height="20" backcolor="#CCCCCC" uuid="c9ee8866-5239-4f33-9554-8cf4f65db76d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Produto ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="68" y="-3" width="100" height="20" uuid="c1c0976a-f083-472a-b525-25f365c1ba40"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="168" y="-3" width="100" height="20" uuid="b6130696-7ca1-4d89-94a9-569d32992e56"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="-3" width="100" height="20" uuid="ce1cd1cd-7bf0-48a8-94c5-787e6ed8ee55"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="368" y="-3" width="100" height="20" uuid="3742a593-dd3c-4757-a577-9863184f6c0f"/>
+			</rectangle>
+			<textField>
+				<reportElement x="67" y="-3" width="100" height="20" uuid="bc27ba09-1a4a-4dd5-8d65-026e7310f768"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_es}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="-3" width="100" height="20" uuid="ae435f2a-a7cb-4ed1-ab86-cb8cb445ab79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{quantidade_es}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="269" y="-3" width="100" height="20" uuid="16d79797-452e-4963-b924-102441eee2a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{entrada_es}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="-3" width="100" height="20" uuid="613b12fd-b817-4987-bd67-88c05554c738"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{produto_descricao_prod}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="112" height="20" uuid="22ef8856-0fe1-4e27-bd64-b36c3b6057ac"/>
+				<text><![CDATA[Cutelaria Artesanal 3ºB]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

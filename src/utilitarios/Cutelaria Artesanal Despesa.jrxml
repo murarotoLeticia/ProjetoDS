@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cutelaria Artesanal Despesa" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="14c4accb-7e4f-4cff-a5c9-f591f97a52da">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from despesa;]]>
+	</queryString>
+	<field name="id_despesa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao_desp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_desp" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datavencimento_desp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numerodoc_desp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataRegistro_desp" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="StatusAtual" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="19" y="4" width="81" height="75" uuid="c9169321-c89f-4e0f-8e57-14434bdfff4d"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="455" y="4" width="81" height="75" uuid="5615fbde-83e8-43f9-a97e-c8dbc1d2f6ea"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="106" y="23" width="342" height="39" uuid="a456e040-93a3-4bc8-8de2-19e3ccd6e253"/>
+				<textElement textAlignment="Center">
+					<font fontName="Book Antiqua" size="32"/>
+				</textElement>
+				<text><![CDATA[LISTA DE DESPESAS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="35">
+			<rectangle>
+				<reportElement mode="Opaque" x="20" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="0d5c13f6-8121-4b69-8383-d32ddb61b720"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="455" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="5657956d-bca9-44b4-9303-073c41f73bef"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="383" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="f5961c04-b6a4-4b94-ad47-9cd4626202aa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="165" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="5452d27c-9adc-44a2-8e6a-e98edc3f4fdd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="92" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="dbc33246-6a70-4f87-93cc-c1f3d2f08403"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="310" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="b7228f65-e90d-405e-b0dd-a7006953166d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="238" y="14" width="73" height="20" backcolor="#CCCCCC" uuid="0d2a4977-ec42-4b07-b382-a811fe05caf7"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="21" y="15" width="58" height="15" backcolor="#CCCCCC" uuid="d698d4f5-db7d-4c69-8f62-bbcc168a70a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="94" y="15" width="67" height="19" backcolor="#CCCCCC" uuid="c73c9682-7e3b-4922-971d-eef73ed10aea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Descrição]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="179" y="17" width="57" height="16" backcolor="#CCCCCC" uuid="6e34c918-d1ee-4469-8577-512e6ce35c5d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Valor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="315" y="15" width="67" height="18" backcolor="#CCCCCC" uuid="0b5de44c-80a4-48b4-8cc6-f1d5cc6cf07e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nº Doc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="458" y="16" width="61" height="14" backcolor="#CCCCCC" uuid="e49d1cbe-01a7-4a0d-b905-c7a3820dbc28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Status Atual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="385" y="16" width="69" height="18" backcolor="#CCCCCC" uuid="edf639d2-1435-4c41-bd28-c5c5338054da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Data Registro ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="240" y="15" width="61" height="19" backcolor="#CCCCCC" uuid="fd5e2316-3148-4731-a59c-dc37803e2781"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Vencimento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="20" y="0" width="74" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="003c5054-f8b2-4c5f-b3da-a60a486becb6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="93" y="0" width="73" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="6049eb6c-31e1-440c-8f93-cbe5098fe0d4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="165" y="0" width="73" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="2c0ad3e7-9e89-4369-b76c-dd5b676cedcf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="238" y="0" width="75" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="b36a4c43-18df-4e32-a983-e666fc7791a5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="383" y="0" width="73" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="4ab40fa8-eb63-4385-aa30-8b1135f56cf3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="456" y="0" width="73" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="4d85ebf1-dcd6-4839-8d8c-1024aefaba38"/>
+			</rectangle>
+			<textField>
+				<reportElement x="92" y="0" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="1f94e79d-1b29-4689-95f0-db0478fd8b32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{descricao_desp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="2" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="4e136e7d-b508-4c48-aa44-b11a56eb9802"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datavencimento_desp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="0" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="f5a8ac5b-7385-4e28-83f5-25dc2ad2eafa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{StatusAtual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="22" y="2" width="70" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="2067baad-d0cf-4869-ae93-aa6c37c81d30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_despesa}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="310" y="0" width="73" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="143721b3-af76-44af-89aa-7bdd5f0b0b80"/>
+			</rectangle>
+			<textField>
+				<reportElement x="167" y="0" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="217f3efd-0bd0-43d8-be1a-b66b9be7808c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{valor_desp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="0" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="6df361df-9e53-41e6-9b62-061cebf92e9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{numerodoc_desp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="73" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="533c5713-af7d-477d-b09a-d92bf609ec44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dataRegistro_desp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="21" width="122" height="20" uuid="334c622f-ae75-40dd-b4cf-6d32badc8190"/>
+				<text><![CDATA[Cutelaria Artesanal 3ºB]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

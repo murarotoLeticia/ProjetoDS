@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cutelaria Artesanal Venda" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3165358a-38ef-474f-9c58-a2ff9703579e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     *,
+     funcionario.`id_funcionario` AS funcionario_id_funcionario,
+     funcionario.`nome_func` AS funcionario_nome_func,
+     funcionario.`cpf_func` AS funcionario_cpf_func,
+     funcionario.`rg_func` AS funcionario_rg_func,
+     funcionario.`estadoCivil_func` AS funcionario_estadoCivil_func,
+     funcionario.`sexo_func` AS funcionario_sexo_func,
+     funcionario.`dataNasc_func` AS funcionario_dataNasc_func,
+     funcionario.`salario_func` AS funcionario_salario_func,
+     funcionario.`telefone_func` AS funcionario_telefone_func,
+     funcionario.`funcao_func` AS funcionario_funcao_func,
+     funcionario.`endereco_func` AS funcionario_endereco_func,
+     funcionario.`senha_func` AS funcionario_senha_func,
+     cliente.`id_cliente` AS cliente_id_cliente,
+     cliente.`nome_cli` AS cliente_nome_cli,
+     cliente.`cpf_cli` AS cliente_cpf_cli,
+     cliente.`rg_cli` AS cliente_rg_cli,
+     cliente.`estadoCivil_cli` AS cliente_estadoCivil_cli,
+     cliente.`sexo_cli` AS cliente_sexo_cli,
+     cliente.`dataNasc_cli` AS cliente_dataNasc_cli,
+     cliente.`telefone_cli` AS cliente_telefone_cli,
+     cliente.`endereco_cli` AS cliente_endereco_cli
+FROM
+     `funcionario` funcionario INNER JOIN `venda` venda ON funcionario.`id_funcionario` = venda.`id_funcionario`
+     INNER JOIN `cliente` cliente ON venda.`id_cliente` = cliente.`id_cliente`]]>
+	</queryString>
+	<field name="id_funcionario" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estadoCivil_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataNasc_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="salario_func" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="funcao_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="senha_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_venda" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_vend" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valortotal_vend" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_cliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_vend" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="formaDPagamento_cai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estadoCivil_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataNasc_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco_cli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="funcionario_id_funcionario" class="java.lang.Integer"/>
+	<field name="funcionario_nome_func" class="java.lang.String"/>
+	<field name="funcionario_cpf_func" class="java.lang.String"/>
+	<field name="funcionario_rg_func" class="java.lang.String"/>
+	<field name="funcionario_estadoCivil_func" class="java.lang.String"/>
+	<field name="funcionario_sexo_func" class="java.lang.String"/>
+	<field name="funcionario_dataNasc_func" class="java.lang.String"/>
+	<field name="funcionario_salario_func" class="java.lang.Double"/>
+	<field name="funcionario_telefone_func" class="java.lang.String"/>
+	<field name="funcionario_funcao_func" class="java.lang.String"/>
+	<field name="funcionario_endereco_func" class="java.lang.String"/>
+	<field name="funcionario_senha_func" class="java.lang.String"/>
+	<field name="cliente_id_cliente" class="java.lang.Integer"/>
+	<field name="cliente_nome_cli" class="java.lang.String"/>
+	<field name="cliente_cpf_cli" class="java.lang.String"/>
+	<field name="cliente_rg_cli" class="java.lang.String"/>
+	<field name="cliente_estadoCivil_cli" class="java.lang.String"/>
+	<field name="cliente_sexo_cli" class="java.lang.String"/>
+	<field name="cliente_dataNasc_cli" class="java.lang.String"/>
+	<field name="cliente_telefone_cli" class="java.lang.String"/>
+	<field name="cliente_endereco_cli" class="java.lang.String"/>
+	<title>
+		<band height="83" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="8" width="89" height="75" uuid="06da9afd-a809-47e9-9c9d-ed4af7d1e030"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="466" y="8" width="89" height="75" uuid="e38f5c4d-a519-4e79-b2ff-344aa4a1a8c0"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="104" y="26" width="343" height="46" uuid="ae731219-f1a7-491c-a5ca-68e2c6f9daea"/>
+				<textElement textAlignment="Center">
+					<font fontName="Book Antiqua" size="32"/>
+				</textElement>
+				<text><![CDATA[LISTA DE VENDAS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="51">
+			<rectangle>
+				<reportElement x="24" y="30" width="57" height="20" backcolor="#CCCCCC" uuid="50454c35-65e4-473b-8d75-57d8b009cbd4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="164" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="2a79d7f6-a465-4a79-a6f8-2e9f2bcfb367"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="81" y="30" width="83" height="20" backcolor="#CCCCCC" uuid="003f976b-6225-4ece-ae8b-4abba93e9884"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="234" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="47a4e94f-3104-4a89-97d6-664120b1ed89"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="304" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="7e494c3f-61ca-415f-aba8-e25d98303419"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="374" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="f3adda7d-4566-4b1a-917f-ed4f9f7ac5c4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="444" y="30" width="88" height="20" backcolor="#CCCCCC" uuid="4df93c61-fd2d-403b-ad5f-dc7e68f99081"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="24" y="30" width="57" height="20" backcolor="#CCCCCC" uuid="12300c02-660f-4b62-a46d-5a456532972a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="30" width="83" height="20" backcolor="#CCCCCC" uuid="6cb36251-2834-40a4-b755-9e7edc459991"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Venda ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="05c6da54-55b6-4203-9eb0-a18c11c15723"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="31" width="70" height="20" backcolor="#CCCCCC" uuid="291952fc-0deb-491c-a13d-d24a14a77dc6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Funcionário ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="30" width="70" height="20" backcolor="#CCCCCC" uuid="a02c81ab-771e-47c7-9a91-24f3ba9b6856"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="31" width="70" height="20" backcolor="#CCCCCC" uuid="5fdb0f60-5414-42a5-b542-1d5ba58d262e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="31" width="88" height="20" backcolor="#CCCCCC" uuid="e4e448b4-d54f-4a04-bcbc-a8a9d077bf21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Forma Pagamento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="24" y="0" width="57" height="20" uuid="4559e0e1-7d3b-4931-8090-e995e5b36135"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="81" y="0" width="83" height="20" uuid="1e6058b2-74da-4246-94b1-d30460853468"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="164" y="0" width="70" height="20" uuid="fe49ae9d-9b2c-4007-822b-09fe30745947"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="234" y="0" width="70" height="20" uuid="4a2c497f-630c-491c-9390-a95e51d948f3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="304" y="0" width="70" height="20" uuid="09ee4b5e-362c-491e-addf-df5949c28c77"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="374" y="0" width="70" height="20" uuid="ed72eb8f-1891-43fa-b4ce-ab7933a9630e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="444" y="0" width="88" height="20" uuid="17ee004d-2d2e-49b7-81bd-21f2056c463e"/>
+			</rectangle>
+			<textField>
+				<reportElement x="23" y="0" width="57" height="20" uuid="8f4a35bb-48f0-4dbd-b7ac-814c44baaf39"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_venda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="0" width="83" height="20" uuid="424c7978-e76f-4c9e-9840-e06ec27c67cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_vend}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="70" height="20" uuid="37788b0d-4e33-4eb3-9f73-d9062572c492"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{valortotal_vend}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="69" height="20" uuid="b859eaba-bee3-4712-bb08-4d425ffee6f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="0" width="70" height="20" uuid="abdd798f-d852-406e-8c6f-ccda76bfcaa6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cliente_nome_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="0" width="70" height="20" uuid="d0db84b6-656b-44cf-9c3a-ebe0d6506910"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status_vend}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="0" width="83" height="20" uuid="1a968eb9-1780-4723-a25e-b39ea333b2db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{formaDPagamento_cai}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="116" height="20" uuid="5f40ad70-fa2e-4053-b0d7-ba3043e4386e"/>
+				<text><![CDATA[Cutelaria Artesanal 3ºB]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

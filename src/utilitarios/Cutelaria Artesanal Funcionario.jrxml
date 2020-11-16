@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cutelaria Artesanal Funcionario " language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ef371243-cdb8-457b-a2b5-ff5c4d464e8b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from funcionario;]]>
+	</queryString>
+	<field name="id_funcionario" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estadoCivil_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataNasc_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="salario_func" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="funcao_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="senha_func" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="15" y="10" width="86" height="69" uuid="bc1f0238-f371-4c0b-a7fd-90ec0b6170c0"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="460" y="10" width="80" height="69" uuid="adf55a51-578b-48a4-ae18-8a7a232e0671"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="102" y="20" width="359" height="59" uuid="fba1329b-85ee-4779-8723-4ed42cc09f69"/>
+				<textElement>
+					<font fontName="Book Antiqua" size="26"/>
+				</textElement>
+				<text><![CDATA[LISTA DE FUNCIONÁRIOS ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<rectangle>
+				<reportElement x="8" y="21" width="33" height="20" backcolor="#CCCCCC" uuid="cfb3a9f2-310f-4e71-a6d0-ee42c46d2d00"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="41" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="b3f303b6-6f10-46e1-887d-19e9583b65f8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="92" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="4798c4e3-0693-432c-9a35-e21c64ee3095"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="143" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="47cc504b-c140-425f-a94c-598745fea2a0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="194" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="7497fffd-3881-4ecd-9b32-308f3cc40d01"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="245" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="436e13c1-1b0f-40cd-ba04-bc883e473592"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="296" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="b13df94a-18c3-48a5-acc0-f279e49ce4ec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="347" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="994524d1-2f38-449f-87ce-31b66864696b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="914ee46f-e3f2-42bc-ac79-6e428f64ff9a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="449" y="21" width="51" height="20" backcolor="#CCCCCC" uuid="7c9c50bf-11e5-4e7c-9c03-a5afd96aca14"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="500" y="21" width="55" height="20" backcolor="#CCCCCC" uuid="43b36607-11e8-4041-9a20-e7aba7aaf147"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="7" y="21" width="33" height="20" backcolor="#CCCCCC" uuid="70405d5f-7d11-4ddd-990d-a5cb0a05a4b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="1333094d-458c-4dde-9de3-dd1076723929"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="ff1101cc-8ed8-4d7a-9a02-bcc644d37513"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="c8982cdc-9f09-4f91-9384-64c98fa81736"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[RG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="2674db15-b75f-4259-a8a0-d126871e25b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Est.Civil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="8369b583-0227-4a80-b935-82c69c019ccc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Sexo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="8fadeacd-451e-4f58-a952-fafa63c2da18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Data Nasc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="157b2a14-d554-42dc-ad56-3134a0231937"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Salário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="f4f27358-5a5f-4d20-a807-97086957e067"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Telefone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="21" width="49" height="20" backcolor="#CCCCCC" uuid="a6381c28-94ee-4bae-89bd-7c95cb0b7975"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Função]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="22" width="55" height="20" backcolor="#CCCCCC" uuid="1cce90bd-aac7-4c36-b377-25d7c32a2a19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Endereço]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<rectangle>
+				<reportElement x="7" y="0" width="34" height="30" uuid="6226c3be-73a0-4f15-8f6b-3bb92be8b890"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="41" y="0" width="51" height="30" uuid="9dfe1b77-1928-45b4-989a-58008b507121"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="92" y="0" width="51" height="30" uuid="d1e86220-d18b-4783-8737-afabc3733918"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="143" y="0" width="51" height="30" uuid="31078852-f23a-4497-b7dc-9f3015c6dbb6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="194" y="0" width="51" height="30" uuid="981a8a2c-b68f-406f-81a4-26d136448a9b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="245" y="0" width="51" height="30" uuid="236c8512-461f-4de9-be07-00c40a290f2f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="347" y="0" width="51" height="30" uuid="dfbd46c1-bb3c-42a1-b0c9-48265f69b326"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="398" y="0" width="51" height="30" uuid="d9d92d2c-a757-4445-a04c-0d3f5a421836"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="449" y="0" width="51" height="30" uuid="9d2390a8-199f-4569-b393-c35d9fa1d211"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="500" y="0" width="55" height="30" uuid="48a269af-6a02-4466-9cc6-3d492c5e3cef"/>
+			</rectangle>
+			<textField>
+				<reportElement x="8" y="0" width="32" height="20" uuid="3e805a94-4efc-4bf4-bd35-4f5bada3cbe8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="49" height="20" uuid="4a4a586c-89e7-40d7-a669-3a1ae43f910d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{endereco_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="449" y="0" width="49" height="20" uuid="fcd5ed8b-aacd-4e86-a7b3-4faed15544ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{funcao_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="0" width="49" height="20" uuid="c2f2834c-f94c-4e0b-8d91-e30b172fc97e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{salario_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="49" height="20" uuid="1e39b9a6-ca11-4ac0-b0e7-89c9ad42dbdf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{telefone_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="0" width="49" height="20" uuid="f45619f6-24ce-4f9b-8b59-9df76bd53a98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cpf_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="0" width="49" height="20" uuid="edb947ea-f0d3-41a9-be5b-82aa0aa28a11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rg_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="0" width="49" height="20" uuid="fbf56416-e6dd-4056-a6b3-30e5986786b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estadoCivil_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="0" width="49" height="20" uuid="61201ab1-815c-4a0a-a141-db787317dded"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sexo_func}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="296" y="0" width="51" height="30" uuid="0431fe92-ae5e-4fda-a586-f9df8985f360"/>
+			</rectangle>
+			<textField>
+				<reportElement x="294" y="0" width="49" height="20" uuid="b0395975-7595-40e0-b613-d9f37b170432"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dataNasc_func}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="0" width="49" height="20" uuid="d66f3d31-bb24-41e4-9821-0823d535b6b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome_func}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="120" height="20" uuid="073a634e-7fb2-4444-a0d3-f8bc74145a6b"/>
+				<text><![CDATA[Cutelaria Artesanal 3ºB]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

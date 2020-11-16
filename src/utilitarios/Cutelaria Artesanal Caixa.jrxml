@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cutelaria Artesanal Caixa " language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a57b0a20-5deb-4977-bc8e-b6619398f27f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from caixa;]]>
+	</queryString>
+	<field name="id_caixa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataabertura_cai" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datafechamento_cai" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldoinicial_cai" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorcreditos_cai" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valordebitos_cai" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldofinal_cai" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_cai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="90" splitType="Stretch">
+			<image>
+				<reportElement x="21" y="11" width="80" height="79" uuid="5831238d-a72d-4408-8bcf-32396f92a51a"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="106" y="26" width="355" height="50" uuid="65fe062c-dfc2-4e70-8ae0-959eff509bac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Book Antiqua" size="32"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE CAIXA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="469" y="11" width="80" height="79" uuid="331d6c8c-d704-43b9-8336-2c3030c346c2"/>
+				<imageExpression><![CDATA["if.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<rectangle>
+				<reportElement x="293" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="cea63307-8b44-4670-8b17-702630c0a5bc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="357" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="b327953e-2db4-4843-a4ee-6d72c35754bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="37e6a005-c957-4464-8db7-7993c3560416"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="420" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="4988f2c1-d875-4f9d-88a3-046348cd7a52"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="21" y="13" width="48" height="20" backcolor="#CCCCCC" uuid="4ab783fe-10fe-4c4f-a412-c554bb156e64"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="484" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="be4de627-78bf-45bf-87cb-4f82b86d1fde"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="13" width="48" height="20" backcolor="#CCCCCC" uuid="2b83b1a2-19fc-471f-8ff4-7aebd372f027"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="69" y="13" width="80" height="20" backcolor="#CCCCCC" uuid="603f7f42-dd70-479f-a4c9-ea5985f4decb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="69" y="14" width="70" height="20" backcolor="#CCCCCC" uuid="a9430a0c-dffb-4012-8c07-550908ca01ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data abertura ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="149" y="13" width="80" height="20" backcolor="#CCCCCC" uuid="6ba86172-4249-4ef3-bac4-3770d194359b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="152" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="f447401b-1e65-49e2-a896-aefddf2e3a44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Fecham]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="23ef204a-7d1e-4101-b180-9eaf976dc97b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Cred]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="13" width="64" height="20" backcolor="#CCCCCC" uuid="b4fb41ce-44ae-444f-9298-84ea5d2449b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo inicial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="14" width="64" height="20" backcolor="#CCCCCC" uuid="dc65b760-6382-4a1a-8ae5-dacdc5ae8285"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Deb]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="14" width="64" height="20" backcolor="#CCCCCC" uuid="5ee9e3ac-50ce-4d3a-ac11-d247d92b66ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo Final]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="14" width="64" height="20" backcolor="#CCCCCC" uuid="3f0a4a39-86df-4af6-b11e-8f58da90d41d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<rectangle>
+				<reportElement x="20" y="0" width="48" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="f0b4f810-2a23-4dff-8078-4501f377ca3c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="291" y="0" width="65" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="4ca80a43-8137-441a-a86f-4882a24fe5e9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="355" y="0" width="65" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="5e7d4dd4-d2d8-430e-9ee6-6ece0b79a0fd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="419" y="0" width="65" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="b667628f-eb8e-4985-9752-a49e6dae6903"/>
+			</rectangle>
+			<textField>
+				<reportElement x="355" y="0" width="63" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="85fbfd38-7e4c-4586-ab3c-38385a4eed68"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{valordebitos_cai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="0" width="63" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="03c414fb-40c6-4b38-8f68-394922b2fa9f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{saldofinal_cai}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="484" y="0" width="64" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="2c31cefd-7249-49ce-8623-60263e67af5b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="484" y="0" width="64" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="5658ca3c-6e45-4095-9f71-20908c89d53e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status_cai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="0" width="48" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="8dad4d98-0719-4e70-9a28-dc63b3d715ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_caixa}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="68" y="0" width="80" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="28aa125c-4b16-4b0f-8e47-b19b26328f4d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="69" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="5ec03a48-d7ba-488f-ac82-9cc46abd0f03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dataabertura_cai}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="148" y="0" width="81" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="5a707a7f-3d59-471e-ac5f-23d84ab19a89"/>
+			</rectangle>
+			<textField>
+				<reportElement x="152" y="0" width="77" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="6eb2285e-8e8d-40e2-9c75-97b8f43c649f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{datafechamento_cai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="0" width="63" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="737d7a0c-50f1-4098-bf41-ad7ccc2733c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{valorcreditos_cai}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="229" y="0" width="64" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="6e3deca0-73c2-4b20-8362-2996c76f8c66"/>
+			</rectangle>
+			<textField>
+				<reportElement x="231" y="0" width="63" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="7d854bd2-5cfb-40d1-a0a7-6940f7462c09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{saldoinicial_cai}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="22" width="114" height="20" uuid="2acc2af7-e33e-4bf3-abbb-d2fc9784f476"/>
+				<text><![CDATA[Cutelaria Artesanal 3ºB]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
